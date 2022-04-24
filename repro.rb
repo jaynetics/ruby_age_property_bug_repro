@@ -13,11 +13,5 @@ end
 # some sanity checks
 assert_support_prop('ascii')
 refute_support_prop('non-existent-prop')
-assert_support_prop('age=10.0')
-refute_support_prop('age=15.0')
 
-if Gem::Version.new(RUBY_VERSION) < Gem::Version.new('3.2.0')
-  refute_support_prop('age=14.0') # <-- unexpected behavior on Ruby 2.x-3.0
-else
-  assert_support_prop('age=14.0')
-end
+assert_support_prop('tamil_supplement')

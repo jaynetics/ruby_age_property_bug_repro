@@ -14,4 +14,4 @@ end
 assert_support_prop('ascii')
 refute_support_prop('non-existent-prop')
 
-assert_support_prop('sterm')
+assert_support_prop('sentence_terminal')
